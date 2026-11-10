@@ -22,8 +22,6 @@
 //    const name = firstItem(["Ada", "Grace"]); // "Ada"
 //    const number = firstItem([10, 20, 30]);    // 10
 //    const none = firstItem([]);               // undefined
-//
-//    Hint: return type should be T | undefined
 
 // ----------------------------------------------------
 // 3. Create a generic function called `mergeObjects`
@@ -36,8 +34,6 @@
 //
 //    const result = mergeObjects({ loggedIn: true }, { role: "admin" });
 //    // Result: { loggedIn: true, role: "admin" }
-//
-//    Hint: Use <T, U> as generic type parameters and return T & U
 
 // ----------------------------------------------------
 // 4. Create a type alias called `ApiResponse<T>`
@@ -57,13 +53,10 @@
 //    It should take an object and a key, and return the value at that key.
 //
 //    - The object can be of any shape (use a generic type T)
-//    - The key must be one of the keys of that object (use keyof T)
+//    - The key has a constraint that it must be one of the keys of that object (use keyof T)
 //    - The return type should be the type of that value (T[K])
 //
 //    For example:
 //    const user = { name: "Ada", age: 36 };
 //    const name = pluck(user, "name"); // "Ada"
 //    const age = pluck(user, "age");   // 36
-//
-//    Hint: Function signature will look something like:
-//    function pluck<T, K extends keyof T>(obj: T, key: K): ????
